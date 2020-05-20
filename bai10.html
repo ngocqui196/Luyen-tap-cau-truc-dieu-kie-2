@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Số điện tiêu dùng:"));
+    let j = 50,q = 0,k = 0;
+    let x = 0,y = 0,z = 0;
+
+    if (a <= 50) {
+        x = a * 1250;
+        alert("Số tiền điện là:" + x +
+            "đồng")
+    }else if (a <= 100) {
+        q = a - j;
+        y = q * 1400 + j * 1250;
+        alert("Số tiền điện là:" + y +
+            "đồng")
+    }else {
+        q = 100 - j;
+        k = a - q - j;
+        z = k * 1750 + q * 1450 + j * 1250;
+        alert("Số tiền điện là:" + z +
+            "đồng")
+    }
+</script>
+</body>
+</html>

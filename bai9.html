@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<label for="a">Nhập cạnh a:</label>
+<input type="number" id="a" ><br>
+<label for="a">Nhập cạnh b:</label>
+<input type="number" id="b" ><br>
+<label for="a">Nhập cạnh c:</label>
+<input type="number" id="c" ><br>
+<button onclick="kiemTra()">Nhập</button>
+<script>
+    function kiemTra() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        if (a,b,c>0) {
+            if (a +b >c && a + c >b && c + b > a) {
+                alert("3 cạnh a, b, c là 1 hình tam giác!")
+            }else {
+                alert("3 cạnh a, b, c không phải là 1 hình tam giác!")
+            }
+        } else{
+            alert("Hình tam giác không tồn tại!")
+        }
+    }
+
+</script>
+</body>
+</html>
